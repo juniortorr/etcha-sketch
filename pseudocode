@@ -1,0 +1,5 @@
+Create a Webpage with 16x16 grid of square divs
+    loop over divs
+        give divs premade css classes (borders and sizes)
+        append them to the content div
+Add flexbox to content div and space out divs 

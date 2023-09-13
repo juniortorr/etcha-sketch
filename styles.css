@@ -1,0 +1,22 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 900px;
+    height: 900px;
+    margin: auto;
+}
+.gridUnit {
+    width: 25%;
+    height: 25%;
+    border: solid 1px black;
+    box-sizing: border-box;
+} .gridUnit:hover {
+    background-color: paleturquoise;
+}
