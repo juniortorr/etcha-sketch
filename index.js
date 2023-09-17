@@ -16,17 +16,23 @@ function newGrid() {
 
 
 function generateGrid(gridNum, newUnitWidth = '6.25%') {
-    for(let i=1; i<=gridNum**2; i++) {
-        let gridSq = document.createElement('div');
-        gridSq.classList.add('gridUnit')
-        // gridSq.style.width = newUnitWidth;
-        // gridSq.style.height = newUnitWidth;
-        content.append(gridSq);
-        gridSq.addEventListener('mouseover', () => {
-            gridSq.style.backgroundColor = 'blue';
-            setTimeout(() => { gridSq.style.backgroundColor = ''}, 2000);
-        });
+    if(gridNum < 100) {
+        for(let i=1; i<=gridNum**2; i++) {
+            let gridSq = document.createElement('div');
+            gridSq.classList.add('gridUnit')
+            gridSq.style.width = newUnitWidth;
+            gridSq.style.height = newUnitWidth;
+            content.append(gridSq);
+            gridSq.addEventListener('mouseover', () => {
+                gridSq.style.backgroundColor = 'blue';
+                setTimeout(() => { gridSq.style.backgroundColor = ''}, 2000);
+            });
+        }
+    } else {
+        alert('Number cannot be over 100');
+        newGrid();
     }
+    
 }
 
 
