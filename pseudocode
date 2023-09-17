@@ -3,3 +3,17 @@ Create a Webpage with 16x16 grid of square divs
         give divs premade css classes (borders and sizes)
         append them to the content div
 Add flexbox to content div and space out divs 
+
+Hover Effect 
+    Learn how to use transition & transform
+    Create a class in css called hover (my own :hover)
+    Figure out how to add a hover listener to each unit? 
+
+button that sends prompt 
+    add event listener will execute generate grid function
+
+Generate grid function  
+    create prompt 
+    takes the value of the prompt 
+    clears the content div
+    executes generateGrid with new value
